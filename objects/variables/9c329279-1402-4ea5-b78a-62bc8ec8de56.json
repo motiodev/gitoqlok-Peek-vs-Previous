@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "9c329279-1402-4ea5-b78a-62bc8ec8de56",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "currentName",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "Data_new",
+  "qIsScriptCreated": true
+}

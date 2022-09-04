@@ -1,0 +1,15 @@
+{
+  "qInfo": {
+    "qId": "f01662c3-2dc6-47ba-82f8-8eb980488314",
+    "qType": "variable"
+  },
+  "qMetaDef": {},
+  "qName": "index",
+  "qNumberPresentation": {
+    "qType": "U",
+    "qnDec": 10,
+    "qUseThou": 0
+  },
+  "qDefinition": "0",
+  "qIsScriptCreated": true
+}

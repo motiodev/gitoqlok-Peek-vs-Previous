@@ -1,0 +1,22 @@
+///$tab Section
+Sales:
+LOAD
+    Product,
+    "Date",
+    Purchased,
+    Sold
+FROM [lib://DataFiles/Previous_Peek_Data — копия.xlsx]
+(ooxml, embedded labels, table is Data_new);
+
+Sales2:
+Load
+RowNo() as ID,
+*
+,Purchased - Sold as Stock
+,IF(Product <> Previous(Product), RangeSum(Purchased, -Sold),
+RangeSum(Peek(EODStock) + Purchased - Sold)
+) as EODStock
+Resident Sales
+Order By Product, Date ;
+
+Drop Table Sales;
